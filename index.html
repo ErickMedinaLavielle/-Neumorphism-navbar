@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Porfolio</li>
+      <li onclick="ClikedButton()" id="service">Services</li>
+    </ul>
+    <script>
+      var element = document.getElementById("service");
+      function ClikedButton() {
+        if (element.style.color == "rgb(0, 255, 241)") {
+          element.style.color = "blue";
+          element.style.boxShadow =
+            " -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2)";
+        } else {
+          element.style.color = "#00fff1";
+          element.style.boxShadow =
+            "inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7),inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2)";
+          console.log(element.style.color);
+        }
+      }
+    </script>
+  </body>
+</html>
